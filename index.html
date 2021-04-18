@@ -38,57 +38,51 @@
     </header>
     <!-- Main section -->
     <main>
-      <section>
-        <h1>About Me</h1>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          illo ratione saepe reiciendis rem modi dignissimos magnam et esse,
-          asperiores harum possimus? Rem quos, facilis natus quae cupiditate a
-          dolorem.
-        </p>
+      <!-- add a left column for content on the left of the page -->
+      <section class="left-column">
+        <!-- add div and id to control each element of the left column -->
+        <div id="about">
+          <h1>About</h1>
+        </div>
+        <div id="work">
+          <h1>Work</h1>
+        </div>
+        <div id="contact">
+          <h1>Contact</h1>
+        </div>
       </section>
-      <!-- Projects section, shown in 4 different square blocks -->
-      <section>
-        <aside>
-          <h1>My Work</h1>
-        </aside>
-        <!-- add a section called portfolio -->
-        <section class="leftcolumn">
-          <section class="portfolio">
-            <!-- assign id of project to each project area (div) -->
-            <div id="project1">
-              <img
-                src="./assets/alexander-shatov-fRjjnN_8njo-unsplash.jpg"
-                alt="#"
-                width="100%"
-              />
-            </div>
-            <div id="project2"></div>
-            <img
-              src="./assets/alexander-shatov-JlO3-oY5ZlQ-unsplash.jpg"
-              alt="#"
-              width="50%"
-            />
-            <div id="project3"></div>
-            <img
-              src="./assets/alexander-shatov-niUkImZcSP8-unsplash.jpg"
-              alt="#"
-              width="50%"
-            />
-            <div id="protentia"></div>
-          </section>
+
+      <!-- add a right column for content on the right of the page -->
+      <section class="right-column">
+        <!-- div section for about content -->
+        <div id="about-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quod,
+            quo exercitationem consectetur officiis consequatur ab sint sequi
+            voluptatum totam, temporibus blanditiis recusandae veritatis
+            numquam. Fugit similique soluta suscipit debitis!
+          </p>
+        </div>
+        <section class="portfolio">
+          <!-- assign id of project to each project area (div) -->
+          <div id="project1">
+            <div class="bg1"></div>
+          </div>
+          <div id="project2"></div>
+          <!-- <img
+            src="./assets/alexander-shatov-JlO3-oY5ZlQ-unsplash.jpg"
+            alt="#"
+          /> -->
+          <div id="project3"></div>
+          <!-- <img
+            src="./assets/alexander-shatov-niUkImZcSP8-unsplash.jpg"
+            alt="#"
+          /> -->
+          <div id="protentia"></div>
         </section>
-        <section></section>
-        <h1>Contact me</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          maxime reiciendis officia aperiam voluptatum, eos voluptates fugit,
-          delectus vel reprehenderit cupiditate blanditiis temporibus sint
-          minima ab dolore placeat explicabo totam.
-        </p>
       </section>
     </main>
+
     <footer>
       <p>(C) 2021 FdO Enterprises & Holdings Inc.</p>
     </footer>

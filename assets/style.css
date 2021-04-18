@@ -31,39 +31,63 @@ nav {
   align-items: flex-end;
   margin: 10px;
   /* border: 2px solid black; */
-  width: 500px;
+  width: 100%;
 }
 
 a {
+  position: relative;
   padding: 5px;
   color: #ff8d27;
   text-decoration: none;
 }
 
-/* main {
+main {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   border: red solid 5px;
-} */
+  background: whitesmoke;
+}
 
 .portfolio {
   display: flex;
+  border: red solid 2px;
+}
+
+.left-column {
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
-  flex-wrap: wrap;
-  max-width: 800px;
-  border: solid green 5px;
+  border: solid blue 2px;
+  min-width: 25%;
+  justify-content: flex-start;
 }
 
-.leftcolumn {
+.right-column {
   display: flex;
-  justify-content: flex-end;
-  border: solid blue 5px;
+  flex-direction: column;
+  min-width: 75%;
 }
 
-aside {
-  display: flex;
-  width: 25%;
-  border: green solid 5px;
+#about {
+  display: block;
+  padding: 50px;
+}
+
+#about-content {
+  display: block;
+  height: 100px;
+}
+
+#project1 {
+  display: block;
+  border: black solid 2px;
+  width: 100%;
+  height: 300px;
+}
+
+.bg1 {
+  background-image: url(./Gato_Icon.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
