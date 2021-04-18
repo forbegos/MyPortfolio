@@ -15,9 +15,6 @@ header {
   justify-content: space-between;
 }
 
-img {
-  /* border: solid 2px black; */
-}
 .title {
   display: flex;
   /* flex-direction: column; */
@@ -41,4 +38,32 @@ a {
   padding: 5px;
   color: #ff8d27;
   text-decoration: none;
+}
+
+/* main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: red solid 5px;
+} */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-width: 800px;
+  border: solid green 5px;
+}
+
+.leftcolumn {
+  display: flex;
+  justify-content: flex-end;
+  border: solid blue 5px;
+}
+
+aside {
+  display: flex;
+  width: 25%;
+  border: green solid 5px;
 }
