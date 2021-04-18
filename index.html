@@ -5,22 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gatosoftware</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <!-- Add a header to include name, photo and links -->
     <header>
-      <img src="./assets/FdO.JPG" alt="profile picture" height="100px" />
-      <h1>Gatosoftware</h1>
-      <h3>Fernando de Orbegoso</h3>
+      <!-- add a div to manage the title and photo section -->
+      <div class="title">
+        <img
+          src="./assets/FdO.JPG"
+          alt="profile picture"
+          height="100px"
+          width="100px"
+        />
+        <h1>Gatosoftware</h1>
+        <!-- <h3>Fernando de Orbegoso</h3> -->
+      </div>
       <!-- Navigation section for the links, inside the header -->
       <nav>
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact Me</a></li>
-          <li><a href="https://www.github.com/forbegos">Repo</a></li>
-        </ul>
+        <a href="#">About Me</a>
+        <a href="#">Work</a>
+        <a href="#">Contact Me</a>
+        <a href="https://www.github.com/forbegos">Repo</a>
       </nav>
     </header>
     <!-- Main section -->
