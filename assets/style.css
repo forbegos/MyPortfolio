@@ -20,11 +20,12 @@ img {
 }
 .title {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: flex-end;
+  align-items: flex-end;
   /* border: 2px solid black; */
   color: #ff8d27;
-  font-size: 250%;
+  font-size: 150%;
 }
 
 nav {
