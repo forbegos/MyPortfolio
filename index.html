@@ -4,97 +4,127 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gatosoftware</title>
-    <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/style.css" />
+    <title>Gatosoftware</title>
   </head>
-  <body>
-    <!-- Add a header to include name, photo and links -->
-    <header>
-      <!-- add a div to manage the title and photo section -->
-      <div class="logo">
+
+  <!-- section HEADER to contain company name, logo and page navigation -->
+  <header>
+    <!-- div for company logo -->
+    <section class="logoandName">
+      <div id="logo">
         <img
           src="./assets/Gato_Icon.png"
-          alt="profile picture"
-          height="100px"
-          width="100px"
+          style="height: 150px"
+          alt="company logo"
         />
-        <h1 id="company-name">Gatosoftware</h1>
-        <!-- <h3>Fernando de Orbegoso</h3> -->
       </div>
-      <!-- Navigation section for the links, inside the header -->
-      <nav>
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact Me</a>
-        <a href="https://www.github.com/forbegos">Repo</a>
-      </nav>
-    </header>
-    <!-- Main section -->
+      <!-- company name -->
+      <div id="companyName">
+        <h1>Gatosoftware</h1>
+      </div>
+    </section>
+
+    <!-- page navigation -->
+    <nav>
+      <a href="#">About Me</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
+      <a href="#">Repo</a>
+    </nav>
+  </header>
+
+  <body>
+    <!-- main section will be divided in 3 rows -->
     <main>
-      <!-- add a left column for content on the left of the page -->
-      <section class="left-column">
-        <!-- add div and id to control each element of the left column -->
-        <div id="about">
-          <h1>About</h1>
+      <!-- section ROW 1 will have to div's, one for the about title and another for the about content -->
+      <section class="row-1">
+        <div id="title">
+          <h2>About</h2>
         </div>
-        <div id="work">
-          <h1>Work</h1>
-        </div>
-        <div id="contact">
-          <h1>Contact</h1>
+        <div id="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            dolor quaerat ipsa hic asperiores molestias quod iste eligendi
+            obcaecati aperiam.
+          </p>
         </div>
       </section>
-
-      <!-- add a right column for content on the right of the page -->
-      <section class="right-column">
-        <!-- div section for about content -->
-        <div id="about-content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quod,
-            quo exercitationem consectetur officiis consequatur ab sint sequi
-            voluptatum totam, temporibus blanditiis recusandae veritatis
-            numquam. Fugit similique soluta suscipit debitis!
-          </p>
+      <!-- section ROW 2  will have 2 div's, one for the work title, and another for a projects section-->
+      <section class="row-2">
+        <div id="title">
+          <h2>Work</h2>
         </div>
-        <!-- assign id of project to each project area (div) -->
-
-        <div id="prorater-app">
-          <a href="https://www.github.com/forbegos/prorater"
-            ><img src="./assets/iPhone_calendar.jpg" alt=""
-          /></a>
-        </div>
-
-        <section class="other-projects">
-          <div id="project2">
-            <a href="https://www.google.com"
-              ><img src="./assets/project-2-placeholder.jpg" alt="" />
-            </a>
+        <!-- section projects will be divided as one dive for showcased project, and section for other projects in a row class "sub-row.  Each project will have a div id = "project"-->
+        <section class="projects">
+          <!-- div for showcased project -->
+          <div id="showcase-project">
+            <a href="#"><img src="./assets/iPhone_calendar.jpg" alt="" /></a>
           </div>
-          <div id="project3">
-            <a href="http://www.google.com"
-              ><img src="./assets/project-3-placeholder.jpg" alt=""
-            /></a>
-          </div>
+          <!-- section SUB ROW 1 -->
+          <section class="sub-row">
+            <div id="project">
+              <a href="#"
+                ><img
+                  src="./assets/project-3-placeholder.jpg"
+                  style="height: 200px; width: 100%"
+                  alt=""
+                />
+              </a>
+            </div>
+            <!-- div for other projects -->
+            <div id="project">
+              <a href="#"
+                ><img
+                  src="./assets/project-2-placeholder.jpg"
+                  style="height: 200px; width: 100%"
+                  alt=""
+              /></a>
+            </div>
+          </section>
+          <!-- section SUB ROW 2 -->
+          <section class="sub-row">
+            <div id="project">
+              <a href="#"
+                ><img
+                  src="./assets/project-3-placeholder.jpg"
+                  style="height: 200px; width: 100%"
+                  alt=""
+              /></a>
+            </div>
+            <div id="project">
+              <a href="#"
+                ><img
+                  src="./assets/project-2-placeholder.jpg"
+                  style="height: 200px; width: 100%"
+                  alt=""
+              /></a>
+            </div>
+          </section>
         </section>
-
-        <div id="contact-me">
+      </section>
+      <!-- sectin ROW 3  will have a div for the "contact me"title and a div for the content-->
+      <section class="row-3">
+        <div id="title">
+          <h2>Contact Me</h2>
+        </div>
+        <div id="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quod,
-            quo exercitationem consectetur officiis consequatur ab sint sequi
-            voluptatum totam, temporibus blanditiis recusandae veritatis
-            numquam. Fugit similique soluta suscipit debitis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            dolor quaerat ipsa hic asperiores molestias quod iste eligendi
+            obcaecati aperiam.
           </p>
+        </div>
       </section>
     </main>
-
+    <!-- section FOOTER -->
     <footer>
-      <p>(C) 2021 FdO Enterprises & Holdings Inc.</p>
+      <h2>(C) 2021 FdO Enterprises & Holdings LLC</h2>
     </footer>
   </body>
 </html>
