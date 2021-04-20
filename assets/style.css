@@ -35,8 +35,14 @@ nav {
   color: var(--textColor);
 }
 
+a {
+  border-bottom: solid white 3px;
+  margin: 20px;
+}
+
 a:hover {
   color: var(--gatoOrange);
+  border-bottom: solid var(--gatoOrange) 3px;
 }
 
 .logoandName {
