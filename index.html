@@ -32,10 +32,10 @@
 
     <!-- page navigation -->
     <nav>
-      <a href="#" id="navLink">About Me</a>
-      <a href="#" id="navLink">Work</a>
-      <a href="#" id="navLink">Contact</a>
-      <a href="#" id="navLink">Repo</a>
+      <a href="#about" id="navLink">About Me</a>
+      <a href="#work" id="navLink">Work</a>
+      <a href="#contact" id="navLink">Contact</a>
+      <a href="https://www.github.com/forbegos" id="navLink">Repo</a>
     </nav>
   </header>
 
@@ -45,9 +45,14 @@
       <!-- section ROW 1 will have to div's, one for the about title and another for the about content -->
       <section class="row-1">
         <div id="title">
-          <h2>About</h2>
+          <h2 id="about">About</h2>
         </div>
         <div id="content">
+          <img
+            src="./assets/images/FdO.JPG"
+            id="profilePicture"
+            alt="Picture of me"
+          />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             similique a, voluptatibus dolor sapiente nulla deleniti dolorem,
@@ -73,7 +78,7 @@
       <!-- section ROW 2  will have 2 div's, one for the work title, and another for a projects section-->
       <section class="row-2">
         <div id="title">
-          <h2>Work</h2>
+          <h2 id="work">Work</h2>
         </div>
         <!-- section projects will be divided as one dive for showcased project, and section for other projects in a row class "sub-row.  Each project will have a div id = "project"-->
         <section class="projects">
@@ -150,7 +155,7 @@
       <!-- sectin ROW 3  will have a div for the "contact me"title and a div for the content-->
       <section class="row-3">
         <div id="title">
-          <h2>Contact Me</h2>
+          <h2 id="contact">Contact Me</h2>
         </div>
         <div id="content">
           <p>

@@ -99,9 +99,17 @@ main {
 }
 
 #content {
+  display: flex;
   width: 75%;
   margin-left: 20px;
   color: var(--textColor);
+  align-items: center;
+  justify-content: space-between;
+}
+
+#profilePicture {
+  height: 200px;
+  margin-right: 40px;
 }
 
 .projects {
