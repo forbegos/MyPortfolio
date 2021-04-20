@@ -35,12 +35,12 @@ nav {
   color: var(--textColor);
 }
 
-a {
+#navLink {
   border-bottom: solid white 3px;
   margin: 20px;
 }
 
-a:hover {
+#navLink:hover {
   color: var(--gatoOrange);
   border-bottom: solid var(--gatoOrange) 3px;
 }
