@@ -35,6 +35,10 @@ nav {
   color: var(--textColor);
 }
 
+a:hover {
+  color: var(--gatoOrange);
+}
+
 .logoandName {
   display: flex;
   justify-content: flex-start;
@@ -117,7 +121,7 @@ main {
   width: 400px;
   box-shadow: 5px 5px 5px var(--gatoOrange);
   margin: 10px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 a:hover #showcaseImage {
@@ -127,7 +131,6 @@ a:hover #showcaseImage {
 #showcaseDescription {
   display: block;
   position: relative;
-  background-color: var(--gatoOrange);
   width: 100px;
   margin-top: -100px;
   margin-left: 40px;
@@ -135,12 +138,15 @@ a:hover #showcaseImage {
   text-align: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  background-image: linear-gradient(
+    rgba(255, 141, 39, 0.3) 0%,
+    rgba(255, 141, 39, 0.8) 100%
+  );
 }
 
 #projectDescription {
   display: block;
   position: relative;
-  background-color: var(--gatoOrange);
   width: 100px;
   margin-top: -70px;
   margin-left: 40px;
@@ -148,6 +154,10 @@ a:hover #showcaseImage {
   text-align: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  background-image: linear-gradient(
+    rgba(255, 141, 39, 0.3) 0%,
+    rgba(255, 141, 39, 0.8) 100%
+  );
 }
 
 #projectImage {
