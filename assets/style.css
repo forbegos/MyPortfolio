@@ -58,9 +58,10 @@ a {
   text-decoration: none;
 }
 
-body {
+main {
   display: flex;
   flex-direction: column;
+  background-color: var(--color2);
 }
 
 .row-1 {
@@ -82,12 +83,15 @@ body {
   width: 25%;
   text-align: right;
   padding: 20px;
-  border-right: solid lightblue 5px;
+  border-right: solid var(--gatoOrange) 5px;
+  font-size: 150%;
+  color: var(--textColor);
 }
 
 #content {
   width: 75%;
   margin-left: 20px;
+  color: var(--textColor);
 }
 
 .projects {
@@ -101,9 +105,29 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 #showcase-project {
   padding: 10px;
+}
+
+#showcaseImage {
+  height: 400px;
+  width: 400px;
+  box-shadow: 5px 5px 5px var(--gatoOrange);
+}
+
+#projectImage {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px var(--gatoOrange);
+}
+
+footer {
+  background-color: var(--color2);
+  color: var(--textColor);
+  text-align: center;
+  font-size: 50%;
 }
