@@ -244,15 +244,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  header,
-  nav,
-  .row-1,
-  .row-2,
-  .row-3,
-  footer,
-  .sideTitle {
-    border: none;
-    height: fit-content;
-    flex-direction: column;
+  a #projectImage {
+    height: 10%;
   }
 }
