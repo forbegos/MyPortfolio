@@ -111,12 +111,42 @@ main {
   padding: 20px;
 }
 
+.projects {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 60px;
+  border: solid green 3px;
+}
+
 .showcaseContainer {
   display: flex;
+  justify-content: space-around;
+  width: 80%;
+  border: solid blue 2px;
+}
+
+#showcase {
+  border: solid black 2px;
 }
 
 .projectsContainer {
   display: flex;
+  border: solid red 2px;
+}
+
+#project1 {
+  border: solid black 2px;
+}
+#project2 {
+  border: solid black 2px;
+}
+#project3 {
+  border: solid black 2px;
+}
+#project4 {
+  border: solid black 2px;
 }
 
 .row-3 {
