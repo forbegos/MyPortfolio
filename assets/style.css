@@ -10,7 +10,7 @@
   --gatoOrange: #ff8d27;
   --color0: #373636;
   --color2: #656565;
-  --backgroundColor2: #efefef;
+  --highlightColor: #efefef;
   --backgroundColor: black;
 }
 
@@ -106,6 +106,12 @@ main {
   box-shadow: 5px 5px 5px grey;
 }
 
+#projectsCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .row-2 {
   display: flex;
   padding: 20px;
@@ -117,36 +123,84 @@ main {
   flex-direction: column;
   align-items: center;
   padding-left: 60px;
-  border: solid green 3px;
+  /* border: solid green 3px; */
 }
 
 .showcaseContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 80%;
-  border: solid blue 2px;
+  /* border: solid blue 2px; */
 }
 
-#showcase {
+#showcaseContainer {
   border: solid black 2px;
+  color: var(--color2);
+  background-color: black;
+  width: 80%;
+  height: 500px;
+  border-radius: 15px;
 }
 
+#proraterDescription {
+  padding: 5%;
+  width: 60%;
+  font-weight: bolder;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+#showcaseImage {
+  height: 400px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: -180px;
+  border: white solid 1px;
+}
+
+#projectImage {
+  height: 180px;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: -125%;
+  margin-left: 50%;
+  border: white solid 1px;
+  opacity: 0.5;
+}
 .projectsContainer {
   display: flex;
-  border: solid red 2px;
+  flex-direction: column;
+  width: 80%;
+  /* border: solid red 2px; */
+}
+.subRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: solid blue 3px; */
 }
 
-#project1 {
-  border: solid black 2px;
+span {
+  color: var(--highlightColor);
 }
-#project2 {
+
+.projectContainer {
+  margin: 1%;
   border: solid black 2px;
+  color: var(--color2);
+  background-color: black;
+  height: 200px;
+  border-radius: 15px;
 }
-#project3 {
-  border: solid black 2px;
-}
-#project4 {
-  border: solid black 2px;
+
+#projectDescription {
+  padding: 5%;
+  width: 50%;
+  font-weight: bolder;
 }
 
 .row-3 {
@@ -154,13 +208,17 @@ main {
   padding: 20px;
 }
 
-/* a:hover #showcaseImage {
+a:hover #projectImage {
   opacity: 1;
-} */
+}
 
 footer {
-  background-color: var(--color2);
-  color: var(--textColor);
-  text-align: center;
+  display: flex;
+  height: 20%;
+  background-color: var(--gatoOrange);
+  color: var(--highlightColor);
+  justify-content: center;
   font-size: 50%;
+  padding-top: 5px;
+  /* border-top: black 3px solid; */
 }
