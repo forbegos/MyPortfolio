@@ -1,15 +1,17 @@
 * {
   box-sizing: border-box;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "San Francisco Pro", Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.5;
+  margin: 0;
 }
 
 :root {
   --gatoOrange: #ff8d27;
   --color0: #373636;
   --color2: #656565;
-  --textColor: #efefef;
+  --backgroundColor2: #efefef;
+  --backgroundColor: black;
 }
 
 h1 {
@@ -17,38 +19,37 @@ h1 {
 }
 
 h2 {
-  font-size: 150%;
+  font-size: 200%;
 }
 
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--color2);
+  background-color: var(--gatoOrange);
   height: 200px;
-  border-bottom: solid var(--gatoOrange) 20px;
+  /* border-bottom: solid var(--gatoOrange) 20px; */
 }
 
 nav {
-  margin-top: 50px;
+  margin-top: 100px;
   padding: 20px;
   color: var(--textColor);
 }
 
 #navLink {
-  border-bottom: solid white 3px;
   margin: 20px;
 }
 
 #navLink:hover {
-  color: var(--gatoOrange);
-  border-bottom: solid var(--gatoOrange) 3px;
+  color: black;
+  border-bottom: solid black 3px;
 }
 
-.logoandName {
+.logo-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
 }
 
 #logo {
@@ -57,26 +58,52 @@ nav {
 }
 
 #companyName {
-  font-size: 200%;
-  color: var(--textColor);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 150%;
+  padding-top: 15%;
+  color: white;
 }
 
 a {
   padding: 10px;
-  font-size: 150%;
-  color: var(--textColor);
+  font-size: 130%;
+  color: white;
   text-decoration: none;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  background-color: var(--color2);
+  background-color: var(--textColor);
 }
 
 .row-1 {
   display: flex;
   padding: 20px;
+  justify-content: space-evenly;
+  /* border: solid red 2px; */
+}
+
+.sideTitle {
+  display: block;
+  text-align: right;
+  padding-right: 20px;
+  width: 25%;
+  border-right: solid black 5px;
+}
+
+.textContainer {
+  display: block;
+  padding-left: 60px;
+  width: 75%;
+  /* border: solid blue 2px; */
+}
+
+#profilePic {
+  margin-left: 15%;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
 }
 
 .row-2 {
@@ -84,107 +111,22 @@ main {
   padding: 20px;
 }
 
+.showcaseContainer {
+  display: flex;
+}
+
+.projectsContainer {
+  display: flex;
+}
+
 .row-3 {
   display: flex;
   padding: 20px;
 }
 
-#title {
-  width: 25%;
-  text-align: right;
-  padding: 20px;
-  border-right: solid var(--gatoOrange) 5px;
-  font-size: 150%;
-  color: var(--textColor);
-}
-
-#content {
-  display: flex;
-  width: 75%;
-  margin-left: 20px;
-  color: var(--textColor);
-  align-items: center;
-  justify-content: space-between;
-}
-
-#profilePicture {
-  height: 200px;
-  margin-right: 40px;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 75%;
-}
-.sub-row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 75%;
-  justify-content: space-evenly;
-}
-
-#showcase-project {
-  padding: 10px;
-}
-
-#showcaseImage {
-  height: 400px;
-  width: 400px;
-  box-shadow: 5px 5px 5px var(--gatoOrange);
-  margin: 10px;
-  opacity: 0.7;
-}
-
-a:hover #showcaseImage {
+/* a:hover #showcaseImage {
   opacity: 1;
-}
-
-#showcaseDescription {
-  display: block;
-  position: relative;
-  width: 100px;
-  margin-top: -100px;
-  margin-left: 40px;
-  color: var(--color0);
-  text-align: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-image: linear-gradient(
-    rgba(255, 141, 39, 0.3) 0%,
-    rgba(255, 141, 39, 0.8) 100%
-  );
-}
-
-#projectDescription {
-  display: block;
-  position: relative;
-  width: 100px;
-  margin-top: -70px;
-  margin-left: 40px;
-  color: var(--color0);
-  text-align: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-image: linear-gradient(
-    rgba(255, 141, 39, 0.3) 0%,
-    rgba(255, 141, 39, 0.8) 100%
-  );
-}
-
-#projectImage {
-  height: 200px;
-  width: 400px;
-  margin: 10px;
-  box-shadow: 5px 5px 5px var(--gatoOrange);
-  opacity: 0.5;
-}
-
-a:hover #projectImage {
-  opacity: 1;
-}
+} */
 
 footer {
   background-color: var(--color2);

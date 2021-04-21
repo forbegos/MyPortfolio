@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./fonts/SFstyle.css" />
+
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Gatosoftware</title>
   </head>
@@ -16,7 +18,7 @@
   <!-- section HEADER to contain company name, logo and page navigation -->
   <header>
     <!-- div for company logo -->
-    <section class="logoandName">
+    <section class="logo-container">
       <div id="logo">
         <img
           src="./assets/images/Gato_Icon.png"
@@ -44,120 +46,77 @@
     <main>
       <!-- section ROW 1 will have to div's, one for the about title and another for the about content -->
       <section class="row-1">
-        <div id="title">
-          <h2 id="about">About</h2>
+        <div id="about" class="sideTitle">
+          <h2>About</h2>
         </div>
-        <div id="content">
-          <img
-            src="./assets/images/FdO.JPG"
-            id="profilePicture"
-            alt="Picture of me"
-          />
+        <!-- <div>
+            <img
+              src="./assets/images/FdO.JPG"
+              id="profilePic"
+              alt="Picture of me"
+            />
+          </div> -->
+        <div class="textContainer">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            similique a, voluptatibus dolor sapiente nulla deleniti dolorem,
-            ipsa quia tempora magni id quas impedit at. Quidem, culpa officia
-            temporibus maiores perferendis deleniti. Unde optio omnis,
-            voluptatum facere ex placeat vel quo aspernatur! Deleniti, quae
-            aspernatur! Fugiat, iure sint. Ab ratione cum quibusdam vitae
-            similique! Sequi, expedita sit? Fugit quam doloribus nostrum velit
-            repellat modi esse rem, nihil deserunt facilis ipsam voluptates
-            numquam nemo eligendi at sequi incidunt enim. Deserunt incidunt
-            nihil porro eius, repellat voluptate quasi labore officia sunt
-            sequi, numquam sint, quas fuga saepe ea aperiam cupiditate amet
-            suscipit. Rerum officiis quae, minima assumenda a optio, nihil
-            exercitationem aliquam aliquid, dolor odio placeat? Earum eius
-            impedit soluta corporis, facere perspiciatis rem quas nostrum
-            inventore est. Laboriosam dolorem facere commodi quos rerum aliquid
-            nesciunt architecto repellat consequuntur sequi sint quibusdam
-            aliquam illo, inventore dolor molestiae mollitia sed accusantium quo
-            debitis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+            beatae id quisquam sint, ducimus eligendi repellat maiores.
+            Perspiciatis mollitia enim dolores pariatur eveniet molestias,
+            consectetur consequuntur ullam magni asperiores culpa. Iusto, hic
+            quae veritatis, sed ex cupiditate assumenda beatae dicta tempore
+            voluptatem culpa in cumque repudiandae atque saepe est delectus
+            doloremque a vero officiis laborum doloribus. Aut quasi sint, qui
+            libero pariatur eaque officiis, quidem aperiam ad ducimus
+            repellendus, odit laudantium itaque? Tenetur at asperiores atque
+            natus expedita doloremque sit cum exercitationem molestiae? Impedit
+            dolorum consectetur neque quas, voluptatum velit a vitae quaerat
+            adipisci dignissimos, dolorem sequi accusamus, rem inventore? Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Modi hic minima
+            ea voluptatibus doloremque autem corporis dignissimos distinctio
+            possimus, dolor eveniet, eum ut! Ipsam, deleniti cum. Possimus
+            repudiandae laudantium quas quo iusto magnam aliquid placeat.
+            Tenetur aspernatur eius ipsa beatae numquam qui aliquid hic quod
+            quae possimus tempore deleniti vel maiores modi magnam dolor
+            reprehenderit, adipisci sed odit impedit accusamus velit ratione!
+            Natus culpa nemo non quibusdam assumenda, repudiandae a, ipsam
+            recusandae voluptates nihil veniam ab. Eum quia asperiores, illo
+            tempora, nulla excepturi voluptates atque sapiente repudiandae in
+            deserunt saepe. Aliquam quisquam eaque inventore voluptate
+            voluptatum amet suscipit odit vitae.
           </p>
         </div>
       </section>
-      <!-- section ROW 2  will have 2 div's, one for the work title, and another for a projects section-->
+
+      <!-- ROW -3 section -->
       <section class="row-2">
-        <div id="title">
-          <h2 id="work">Work</h2>
+        <div id="work" class="sideTitle">
+          <h2>Work</h2>
         </div>
-        <!-- section projects will be divided as one dive for showcased project, and section for other projects in a row class "sub-row.  Each project will have a div id = "project"-->
-        <section class="projects">
-          <!-- div for showcased project -->
-          <div id="showcase-project">
-            <a href="https://www.github.com/forbegos/prorater"
-              ><img
-                src="./assets/images/Prorater.PNG"
-                id="showcaseImage"
-                alt=""
-              />
-              <div id="showcaseDescription">
-                <p>Prorater iOS App - Swift</p>
-              </div>
-            </a>
+        <section class="showcaseContainer">
+          <div id="showcase">
+            <p>SHOWCASE PROJECT HERE</p>
           </div>
-          <!-- section SUB ROW 1 -->
-          <section class="sub-row">
-            <div id="project">
-              <a href="#"
-                ><img
-                  src="./assets/images/brett-jordan-uZZ4TwbljUw-unsplash.jpg"
-                  id="projectImage"
-                  alt=""
-                />
-                <div id="projectDescription">
-                  <p>Project 1</p>
-                </div>
-              </a>
-            </div>
-            <!-- div for other projects -->
-            <div id="project">
-              <a href="#"
-                ><img
-                  src="./assets/images/christian-wiediger-70ku6P7kgmc-unsplash.jpg"
-                  id="projectImage"
-                  alt=""
-                />
-                <div id="projectDescription">
-                  <p>Project 2</p>
-                </div>
-              </a>
-            </div>
-          </section>
-          <!-- section SUB ROW 2 -->
-          <section class="sub-row">
-            <div id="project">
-              <a href="#"
-                ><img
-                  src="./assets/images/joan-gamell-ZS67i1HLllo-unsplash.jpg"
-                  id="projectImage"
-                  alt=""
-                />
-                <div id="projectDescription">
-                  <p>Project 3</p>
-                </div>
-              </a>
-            </div>
-            <div id="project">
-              <a href="#"
-                ><img
-                  src="./assets/images/lilzidesigns-hOGKh5qHNAE-unsplash.jpg"
-                  id="projectImage"
-                  alt=""
-                />
-                <div id="projectDescription">
-                  <p>Project 4</p>
-                </div>
-              </a>
-            </div>
-          </section>
+        </section>
+
+        <section class="projectsContainer">
+          <div id="project1">
+            <p>PROJECT 1 HERE</p>
+          </div>
+          <div id="project2">
+            <p>PROJECT 2 HERE</p>
+          </div>
+          <div id="project3">
+            <p>PROJECT 3 HERE</p>
+          </div>
+          <div id="project4">
+            <p>PROJECT 4 HERE</p>
+          </div>
         </section>
       </section>
-      <!-- sectin ROW 3  will have a div for the "contact me"title and a div for the content-->
       <section class="row-3">
-        <div id="title">
-          <h2 id="contact">Contact Me</h2>
+        <div id="contact" class="sideTitle">
+          <h2>Contact</h2>
         </div>
-        <div id="content">
+        <div class="textContainer">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
             beatae id quisquam sint, ducimus eligendi repellat maiores.
