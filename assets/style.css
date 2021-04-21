@@ -32,6 +32,7 @@ header {
 }
 
 nav {
+  display: flex;
   margin-top: 100px;
   padding: 20px;
   color: var(--textColor);
@@ -221,4 +222,37 @@ footer {
   font-size: 50%;
   padding-top: 5px;
   /* border-top: black 3px solid; */
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  nav,
+  .row-1,
+  .row-2,
+  .row-3,
+  footer,
+  .sideTitle,
+  .logo-container,
+  .projects,
+  .imageContainer,
+  .showcaseContainer {
+    border: none;
+    height: fit-content;
+    flex-direction: column;
+    padding: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  nav,
+  .row-1,
+  .row-2,
+  .row-3,
+  footer,
+  .sideTitle {
+    border: none;
+    height: fit-content;
+    flex-direction: column;
+  }
 }
