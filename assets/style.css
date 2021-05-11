@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "San Francisco Pro", Arial, Helvetica, sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
@@ -93,6 +93,11 @@ main {
   border-right: solid black 5px;
 }
 
+#about {
+  font-size: 150%;
+  width: 90%;
+}
+
 .textContainer {
   display: block;
   padding-left: 60px;
@@ -127,78 +132,31 @@ main {
   /* border: solid green 3px; */
 }
 
-.showcaseContainer {
+.project {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
   width: 80%;
-  /* border: solid blue 2px; */
-}
-
-#showcaseContainer {
-  border: solid black 2px;
   color: var(--color2);
   background-color: black;
-  width: 80%;
-  height: 500px;
-  border-radius: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-#proraterDescription {
-  padding: 5%;
-  width: 60%;
-  font-weight: bolder;
-}
-
-.imageContainer {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 100px;
-}
-
-#showcaseImage {
-  height: 400px;
-  width: 200px;
-  border-radius: 5px;
-  margin-top: -180px;
-  border: white solid 1px;
-}
-
-#projectImage {
-  height: 180px;
-  width: 100px;
-  border-radius: 5px;
-  margin-top: -125%;
-  margin-left: 50%;
-  border: white solid 1px;
-  opacity: 0.5;
-}
-.projectsContainer {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  /* border: solid red 2px; */
-}
-.subRow {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* border: solid blue 3px; */
+#project-image {
+  height: 200px;
+  width: 150px;
+  border: solid white 1px;
+  border-radius: 10px;
+  opacity: 0.7;
 }
 
 span {
   color: var(--highlightColor);
 }
 
-.projectContainer {
-  margin: 1%;
-  border: solid black 2px;
-  color: var(--color2);
-  background-color: black;
-  height: 200px;
-  border-radius: 15px;
-}
-
-#projectDescription {
+#project-description {
   padding: 5%;
   width: 50%;
   font-weight: bolder;
@@ -209,8 +167,13 @@ span {
   padding: 20px;
 }
 
-a:hover #projectImage {
+#contact-info {
+  color: black;
+  font-size: larger;
+}
+a:hover #project-image {
   opacity: 1;
+  border: yellow solid 3px;
 }
 
 footer {
