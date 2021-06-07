@@ -4,11 +4,6 @@
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
-  /* background: url(./images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover; */
 }
 
 :root {
@@ -33,9 +28,6 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  /* background-color: var(--gatoOrange); */
-  /* height: 200px; */
-  /* border-bottom: solid var(--gatoOrange) 20px; */
 }
 
 nav {
@@ -54,12 +46,6 @@ nav {
   border-bottom: solid var(--gatoOrange) 3px;
 }
 
-.col-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .logo-container {
   display: flex;
   flex-wrap: wrap;
@@ -69,13 +55,11 @@ nav {
 
 #logo {
   padding-top: 20px;
-  /* margin-bottom: 10px; */
 }
 
-#companyName {
+.companyName {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 150%;
-  /* padding-top: 15%; */
+  font-size: 250%;
   color: var(--textColor);
 }
 
@@ -84,110 +68,6 @@ a {
   font-size: 130%;
   color: var(--textColor);
   text-decoration: none;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--textColor);
-}
-
-.row-1 {
-  display: flex;
-  padding: 20px;
-  justify-content: space-evenly;
-  /* border: solid red 2px; */
-}
-
-.sideTitle {
-  display: block;
-  text-align: right;
-  padding-right: 20px;
-  width: 25%;
-  border-right: solid white 5px;
-}
-
-#about {
-  font-size: 150%;
-  width: 90%;
-  color: var(--textColor);
-}
-
-.textContainer {
-  display: block;
-  padding-left: 60px;
-  width: 75%;
-  /* border: solid blue 2px; */
-}
-
-#profilePic {
-  margin-left: 15%;
-  height: 200px;
-  border-radius: 5px;
-  /* box-shadow: 5px 5px 5px grey; */
-}
-
-#projectsCol {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.row-2 {
-  display: flex;
-  padding: 20px;
-}
-
-.projects {
-  display: flex;
-  width: 75%;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 60px;
-  /* border: solid green 3px; */
-}
-
-.project {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 250px;
-  width: 80%;
-  color: var(--textColor);
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-#project-image {
-  height: 200px;
-  width: 150px;
-  border: solid white 1px;
-  border-radius: 10px;
-  opacity: 0.7;
-}
-
-span {
-  color: var(--highlightColor);
-}
-
-#project-description {
-  padding: 5%;
-  width: 50%;
-  font-weight: bolder;
-}
-
-.row-3 {
-  display: flex;
-  padding: 20px;
-}
-
-#contact-info {
-  color: black;
-  font-size: larger;
-}
-a:hover #project-image {
-  opacity: 1;
-  border: yellow solid 3px;
 }
 
 footer {
