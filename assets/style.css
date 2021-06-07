@@ -4,11 +4,11 @@
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
-  background: url(./images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg);
+  /* background: url(./images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
 }
 
 :root {
@@ -17,7 +17,7 @@
   --color2: #656565;
   --highlightColor: #efefef;
   --backgroundColor: white;
-  --textColor: white;
+  --textColor: black;
 }
 
 h1 {
@@ -76,13 +76,13 @@ nav {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 150%;
   /* padding-top: 15%; */
-  color: white;
+  color: var(--textColor);
 }
 
 a {
   padding: 10px;
   font-size: 130%;
-  color: white;
+  color: var(--textColor);
   text-decoration: none;
 }
 
