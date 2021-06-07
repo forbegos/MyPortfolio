@@ -4,6 +4,12 @@
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
+  background: url(./images/adam-birkett-1Qj8xts8Jr0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* z-index: -1; */
 }
 
 :root {
@@ -11,7 +17,7 @@
   --color0: #373636;
   --color2: #656565;
   --highlightColor: #efefef;
-  --backgroundColor: black;
+  --backgroundColor: white;
 }
 
 h1 {
@@ -43,8 +49,8 @@ nav {
 }
 
 #navLink:hover {
-  color: black;
-  border-bottom: solid black 3px;
+  color: var(--gatoOrange);
+  border-bottom: solid var(--gatoOrange) 3px;
 }
 
 .logo-container {
