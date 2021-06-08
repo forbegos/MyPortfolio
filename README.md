@@ -4,6 +4,6 @@
 
 ## Below is a screenshot of my page at this stage:
 
-![](./assets/images/Portfolio_Page_Screenshot.png)
+![](./assets/images/Portfolio_Page_Screenshot2.png)
 
 ### https://forbegos.github.io/MyPortfolio/
