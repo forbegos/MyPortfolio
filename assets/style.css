@@ -1,9 +1,14 @@
-* {
+body {
   box-sizing: border-box;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
+  background-image: url(./images/annie-spratt-yI3weKNBRTc-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 :root {
@@ -14,7 +19,13 @@
   --backgroundColor: white;
   --textColor: black;
 }
-
+.carousel {
+  width: 80%;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+}
 h1 {
   font-size: 200%;
 }
@@ -30,20 +41,14 @@ header {
   align-items: center;
 }
 
-nav {
+.nav {
   display: flex;
-  margin-top: 100px;
-  padding: 20px;
+  flex-direction: column;
   color: var(--textColor);
-}
-
-#navLink {
-  margin: 20px;
 }
 
 #navLink:hover {
   color: var(--gatoOrange);
-  border-bottom: solid var(--gatoOrange) 3px;
 }
 
 .logo-container {
@@ -59,7 +64,7 @@ nav {
 
 .companyName {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 250%;
+  font-size: 500%;
   color: var(--textColor);
 }
 
@@ -69,16 +74,31 @@ a {
   color: var(--textColor);
   text-decoration: none;
 }
-
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.about-me {
+  width: 70%;
+}
+.contact {
+  margin-top: 40px;
+  text-align: center;
+}
 footer {
   display: flex;
-  height: 20%;
+  height: 30%;
   /* background-color: var(--gatoOrange);
   color: var(--highlightColor); */
   justify-content: center;
   font-size: 50%;
-  padding-top: 5px;
-  /* border-top: black 3px solid; */
+  padding: 20px; /* border-top: black 3px solid; */
 }
 
 @media screen and (max-width: 768px) {

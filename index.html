@@ -14,7 +14,13 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link
@@ -25,188 +31,232 @@
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Gatosoftware</title>
   </head>
-  <!-- section HEADER to contain company name, logo and page navigation -->
-  <header>
-    <!-- div for company logo -->
-    <section class="logo-container">
-      <div id="logo">
-        <img
-          src="./assets/images/Gato_Icon.png"
-          style="height: 150px"
-          alt="company logo"
-        />
-      </div>
-      <!-- company name -->
-      <div>
-        <h1 class="companyName">Gatosoftware</h1>
-      </div>
-    </section>
-
-    <!-- page navigation -->
-    <nav>
-      <a href="#about" id="navLink">About Me</a>
-      <a href="#work" id="navLink">Work</a>
-      <a href="#contact" id="navLink">Contact</a>
-      <a href="https://www.github.com/forbegos" id="navLink">Repo</a>
-    </nav>
-  </header>
 
   <body>
-    <main>
-      <!-- BEGIN CAROUSEL -->
-
-      <div class="home-slider owl-carousel js-fullheight">
-        <div
-          class="slider-item js-fullheight"
-          style="
-            background-image: url(./assets/images/valentin-muller-bWtd1ZyEy6w-unsplash.jpg);
-          "
-        >
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="
-                row
-                no-gutters
-                slider-text
-                js-fullheight
-                align-items-center
-                justify-content-center
-              "
-            >
-              <div class="col-md-12 ftco-animate">
-                <div class="text w-100 text-center">
-                  <h1 class="mb-3">Weather App</h1>
-                  <h2>
-                    A Javascript application to display current weather and 5
-                    day forecast.
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="header">
+      <div class="logo-container">
+        <div id="logo">
+          <img
+            src="./assets/images/Gato_Icon.png"
+            style="height: 250px"
+            alt="company logo"
+          />
         </div>
-
-        <div
-          class="slider-item js-fullheight"
-          style="background-image: url(./assets/images/Prorater.PNG)"
-        >
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="
-                row
-                no-gutters
-                slider-text
-                js-fullheight
-                align-items-center
-                justify-content-center
-              "
-            >
-              <div class="col-md-12 ftco-animate">
-                <div class="text w-100 text-center">
-                  <h1 class="mb-3">Prorater</h1>
-                  <h2>
-                    An iOS application developed using SWIFT to assist property
-                    managers calculate prorated rental amounts in any given day
-                    of the month.
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="slider-item js-fullheight"
-          style="
-            background-image: url(./assets/images/stil-flRm0z3MEoA-unsplash.jpg);
-          "
-        >
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="
-                row
-                no-gutters
-                slider-text
-                js-fullheight
-                align-items-center
-                justify-content-center
-              "
-            >
-              <div class="col-md-12 ftco-animate">
-                <div class="text w-100 text-center">
-                  <h1 class="mb-3">Work Day Scheduler</h1>
-                  <h2>
-                    A Javascript application that creates a daily calendar that
-                    the user can utilize to create a daily task list.
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="slider-item js-fullheight"
-          style="
-            background-image: url(./assets/images/should-wang-ye5T5R0G-GA-unsplash.jpg);
-          "
-        >
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="
-                row
-                no-gutters
-                slider-text
-                js-fullheight
-                align-items-center
-                justify-content-center
-              "
-            >
-              <div class="col-md-12 ftco-animate">
-                <div class="text w-100 text-center">
-                  <h1 class="mb-3">Food Truck Locator</h1>
-                  <h2>
-                    A Javascript application that uses a server side API that
-                    allows for the search and mapping of food truck locations in
-                    a city.
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="slider-item js-fullheight"
-          style="
-            background-image: url(./assets/images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg);
-          "
-        >
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="
-                row
-                no-gutters
-                slider-text
-                js-fullheight
-                align-items-center
-                justify-content-center
-              "
-            >
-              <div class="col-md-12 ftco-animate">
-                <div class="text w-100 text-center">
-                  <h1 class="mb-3">easyCRM</h1>
-                  <h2>A simple CRM application for the small business.</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div>
+          <h1 class="companyName">Gatosoftware</h1>
         </div>
       </div>
-    </main>
+    </div>
+    <!-- END HEADER -->
+    <div class="profile-pic">
+      <img
+        src="./assets/images/FdO_Pic.png"
+        style="height: 150px"
+        alt="profile picture"
+      />
+    </div>
+    <div class="content">
+      <div class="about-me">
+        <h4>
+          My name is Fernando de Orbegoso and my dream has always been to
+          create. Create great tools to help your business grow, or perhaps a
+          simple application to make your day easier. My passion is development
+          and my goal is to help small business access the benefits of modern
+          technology by breaking down barriers and high cost. My mission is to
+          provide my expertise in both business and development to help small
+          business grow and achieve their goals. These are some of my
+          applications.
+        </h4>
+      </div>
+    </div>
+    <!-- BEGIN CAROUSEL -->
+    <div class="projects">
+      <div class="carousel">
+        <div class="home-slider owl-carousel js-fullheight">
+          <!-- First Project -->
+          <a href="https://forbegos.github.io/Weather-Dashboard">
+            <div
+              class="slider-item js-fullheight"
+              style="
+                background-image: url(./assets/images/valentin-muller-bWtd1ZyEy6w-unsplash.jpg);
+              "
+            >
+              <div class="overlay"></div>
+              <div class="container">
+                <div
+                  class="
+                    row
+                    no-gutters
+                    slider-text
+                    js-fullheight
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                      <h1 class="mb-3">Weather App</h1>
+                      <h2>
+                        A Javascript application to display current weather and
+                        5 day forecast.
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Second Project -->
+          <a href="https://apps.apple.com/us/app/prorater/id1526359025">
+            <div
+              class="slider-item js-fullheight"
+              style="background-image: url(./assets/images/Prorater.PNG)"
+            >
+              <div class="overlay"></div>
+              <div class="container">
+                <div
+                  class="
+                    row
+                    no-gutters
+                    slider-text
+                    js-fullheight
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                      <h1 class="mb-3">Prorater</h1>
+                      <h2>
+                        An iOS application developed using SWIFT to assist
+                        property managers calculate prorated rental amounts in
+                        any given day of the month.
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Third Project -->
+          <a href="https://forbegos.github.io/Word-Day-Scheduler">
+            <div
+              class="slider-item js-fullheight"
+              style="
+                background-image: url(./assets/images/stil-flRm0z3MEoA-unsplash.jpg);
+              "
+            >
+              <div class="overlay"></div>
+              <div class="container">
+                <div
+                  class="
+                    row
+                    no-gutters
+                    slider-text
+                    js-fullheight
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                      <h1 class="mb-3">Work Day Scheduler</h1>
+                      <h2>
+                        A Javascript application that creates a daily calendar
+                        that the user can utilize to create a daily task list.
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Fourth Project -->
+          <a href="https://rgeisreiter.github.io/FoodTruckLocator">
+            <div
+              class="slider-item js-fullheight"
+              style="
+                background-image: url(./assets/images/should-wang-ye5T5R0G-GA-unsplash.jpg);
+              "
+            >
+              <div class="overlay"></div>
+              <div class="container">
+                <div
+                  class="
+                    row
+                    no-gutters
+                    slider-text
+                    js-fullheight
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                      <h1 class="mb-3">Food Truck Locator</h1>
+                      <h2>
+                        A Javascript application that uses a server side API
+                        that allows for the search and mapping of food truck
+                        locations in a city.
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Fifth Project -->
+          <!-- <a href="https://apps.apple.com/us/app/prorater/id1526359025">
+            <div
+              class="slider-item js-fullheight"
+              style="
+                background-image: url(./assets/images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg);
+              "
+            >
+              <div class="overlay"></div>
+              <div class="container">
+                <div
+                  class="
+                    row
+                    no-gutters
+                    slider-text
+                    js-fullheight
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                      <h1 class="mb-3">easyCRM</h1>
+                      <h2>A simple CRM application for the small business.</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a> -->
+          <!-- Projects END -->
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="contact">
+        <h3>Contact me</h3>
+        <a href="https://www.github.com/forbegos"
+          ><img
+            src="./assets/images/GitHub-Mark-32px.png"
+            alt="LinkedIn icon"
+            style="height: 30px; width: 30px"
+        /></a>
+        <a href="mailto: forbegos@me.com">forbegos@me.com</a>
+        <a href="https://www.linkedin.com/in/fernandodeorbegoso"
+          ><img
+            src="./assets/images/Linkedin.png"
+            alt="LinkedIn icon"
+            style="height: 30px; width: 30px"
+        /></a>
+      </div>
+    </div>
     <!-- section FOOTER -->
     <footer>
       <h2>(C) 2021 FdO Enterprises & Holdings LLC</h2>
@@ -216,5 +266,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"
+      integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
