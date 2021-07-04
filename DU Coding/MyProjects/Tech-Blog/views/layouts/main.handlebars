@@ -1,0 +1,46 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <h1>Tech Blog</h1>
+        <div class="navbar-nav">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="#">Dashboard</a>
+          <a
+            class="nav-link"
+            id="logout"
+            href="http://www.google.com"
+          >Logout</a>
+          <a href="/login" class="nav-link">Login</a>
+        </div>
+      </div>
+    </nav>
+    <main class="container container-fluid mt-5">
+      <!-- Render the contents of the sub layout here -->
+      {{{body}}}
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Render script for logged in users only -->
+    <script src="/js/logout.js"></script>
+  </body>
+
+</html>

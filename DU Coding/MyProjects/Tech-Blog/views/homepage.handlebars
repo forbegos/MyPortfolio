@@ -1,0 +1,19 @@
+<!-- Loop over each object in the entries array -->
+<div>
+  {{#each entries as |entry|}}
+    <div class="card" style="width: 60rem;">
+      <div class="card-header">
+        <h3>
+          {{entry.title}}
+        </h3>
+        <p>Posted by: {{entry.user.username}} on: {{format_date entry.date_created}} <p>
+      </div>
+      <div class="card-body">
+        <p class="card-text"> {{entry.content}}</p>
+      </div>
+    </div>
+    <br />
+    {{! add delete button here for each post??? }}
+  {{/each}}
+  <a href="/entry" class="btn btn-primary">New Post</a>
+</div>
